@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&family=Yuji+Syuku&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --very-black-bg: hsl(217, 54%, 11%);
+  --very-dark-card: hsl(216, 50%, 16%);
+  --very-dark-line: hsl(215, 21%, 36%);
+  --white: hsl(0, 0%, 100%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --font: "Outfit", sans-serif;
+}
+body {
+  background: var(--very-black-bg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+}
+
+.card {
+  width: 20%;
+  height: 70%;
+  background: var(--very-dark-card);
+  border-radius: 10px;
+}
+
+.cadr_img {
+  width: 85%;
+  height: 50%;
+  margin: 8%;
+  background: url("/images/image-equilibrium.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+h1,
+p,
+.card_price {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 5%;
+}
+
+h1 {
+  font-size: 18px;
+  color: var(--white);
+}
+
+p,
+span {
+  color: var(--very-dark-line);
+  font-weight: 500;
+}
+
+.card_price {
+  width: 100%;
+  display: flex;
+}
+
+.card_price > span {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.card_price img {
+  margin-right: 5px;
+}
+
+.card_price span:first-child {
+  margin-right: auto;
+  color: var(--cyan);
+}
+.card_price span:last-child {
+  font-weight: 600;
+}
+hr {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 2%;
+  height: 1px;
+  border: none;
+  background: var(--very-dark-line);
+}
+.card_profile {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+.card_profile p,
+.card_profile span {
+  font-weight: 600;
+}
+.card_profile p {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+}
+.card_profile span {
+  color: var(--white);
+  margin-left: 3px;
+}
+
+.card_profile img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+    height: 80%;
+  }
+}
