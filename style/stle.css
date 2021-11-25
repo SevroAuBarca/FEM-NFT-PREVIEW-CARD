@@ -22,6 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: var(--font);
+  position: relative;
 }
 
 .card {
@@ -116,9 +117,21 @@ hr {
   border-radius: 50%;
 }
 
+.attribution {
+  position: absolute;
+  bottom: 5%;
+  color: var(--white);
+  font-size: 1rem;
+}
+
 @media (max-width: 375px) {
   .card {
     width: 90%;
     height: 80%;
+  }
+
+  .attribution {
+    bottom: 3%;
+    font-size: 0.8rem;
   }
 }
